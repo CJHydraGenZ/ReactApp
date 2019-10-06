@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import ReactDOM from "react-dom";
 
 function App() {
   return (
@@ -22,5 +23,31 @@ function App() {
     </div>
   );
 }
+
+// const name = "Josh Perez";
+// const element = <h1>Hello, {name}</h1>;
+
+// ReactDOM.render(element, document.getElementById("master"));
+
+const element = (
+  <div>
+    <h1>Hello World aaakakakak</h1>
+  </div>
+);
+
+const cahya = document.querySelector("#master");
+ReactDOM.render(element, cahya);
+
+const e  = React.createElement;
+
+
+function button(){
+  return e(
+    {
+      onClick: () => this.s
+    }
+  )
+}
+
 
 export default App;
